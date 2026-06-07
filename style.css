@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+:root {
+    /* Primary Brand Colors */
+    --primary: #7C3AED;
+    --primary-light: #A855F7;
+    --primary-dark: #5B21B6;
+    --accent: #C084FC;
+
+    /* Background Colors */
+    --bg-main: #14002E;
+    --bg-secondary: #1E0A4B;
+    --bg-card: #22104D;
+    --bg-sidebar: #180038;
+    --bg-hover: #2D0B66;
+
+    /* Gradient Colors */
+    --gradient-start: #14002E;
+    --gradient-middle: #2D0B66;
+    --gradient-end: #7C3AED;
+
+    /* Text Colors */
+    --text-primary: #F8FAFC;
+    --text-secondary: #C4B5FD;
+    --text-muted: #A78BFA;
+    --text-disabled: #7E6BB8;
+
+    /* Border Colors */
+    --border-primary: #5B21B6;
+    --border-secondary: #6D28D9;
+    --border-light: rgba(168, 85, 247, 0.2);
+
+    /* Glow Effects */
+    --glow-purple: rgba(124, 58, 237, 0.6);
+    --glow-pink: rgba(168, 85, 247, 0.5);
+    --glow-light: rgba(192, 132, 252, 0.4);
+
+    /* Status Colors */
+    --success: #22C55E;
+    --warning: #F59E0B;
+    --danger: #EF4444;
+    --info: #3B82F6;
+
+    /* Shadows */
+    --shadow-sm: 0 4px 12px rgba(124, 58, 237, 0.15);
+    --shadow-md: 0 8px 24px rgba(124, 58, 237, 0.25);
+    --shadow-lg: 0 12px 40px rgba(124, 58, 237, 0.35);
+
+    /* Common Gradients */
+    --gradient-primary: linear-gradient(90deg,
+            #7C3AED,
+            #A855F7);
+
+    --gradient-background: linear-gradient(135deg,
+            #14002E 0%,
+            #2D0B66 45%,
+            #7C3AED 100%);
+
+    --gradient-card: linear-gradient(180deg,
+            rgba(124, 58, 237, 0.15),
+            rgba(34, 16, 77, 0.9));
+}
+
+body {
+    background: var(--bg-main);
+    color: var(--text-primary);
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    height: 100%;
+    width: 100%;
+}
+
+.a-home:hover {
+    background-color: var(--bg-hover);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--bg-hover);
+}
+
+#header{
+    position: fixed;
+    height: 100%;
+    top: 0px;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+
+.download-cv{
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: 100%;
+}
+
+.download-cv button{
+    padding: 0.5rem;
+    border-radius: 8px;
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    border: none;
+    transition: all 0.4s ease-in-out;
+    border: 1px solid var(--bg-main);
+}
+
+.download-cv button:hover{
+    border: 1px solid #2D0B66;
+    box-shadow: var(--shadow-lg);
+}
