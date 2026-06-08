@@ -11,10 +11,9 @@
     margin: 0.3rem 0.5rem;
 }
 
-.menu-btn:hover {
-    border: 1px solid var(--bg-hover);
-    background-color: var(--bg-hover);
-    box-shadow: var(--shadow-lg);
+.menu-btn:focus-visible {
+    outline: 2px solid var(--glow-purple);
+    outline-offset: 3px;
 }
 
 .sidebar {
@@ -40,7 +39,7 @@
     -webkit-backdrop-filter: blur(6px);
     opacity: 0;
     visibility: hidden;
-    transition: all 0.3s ease;
+    transition: 0.3s ease;
     z-index: 998;
 }
 
@@ -113,6 +112,8 @@
         height: 100%;
         box-shadow: var(--shadow-lg); */
     }
+
+    
 
     .menu-btn {
         display: none;
